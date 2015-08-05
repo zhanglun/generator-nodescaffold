@@ -3,3 +3,9 @@ language: node_js
 node_js:
   - '0.12'
   - '0.10'
+deploy:
+  provider: npm
+  email: "zhanglun1410@gmail.com"
+  api_key: "67eee6a7-a29e-495c-aadc-6acdda345a88"
+  on:
+    branch: master
