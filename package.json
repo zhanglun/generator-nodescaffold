@@ -1,0 +1,35 @@
+{
+  "name": "generator-nodescaffold",
+  "version": "0.0.0",
+  "description": "Yeoman generator",
+  "license": "MIT",
+  "main": "app/index.js",
+  "repository": "zhanglun/generator-nodescaffold",
+  "author": {
+    "name": "zhanglun",
+    "email": "zhanglun1410@gmail.com",
+    "url": "https://github.com/zhanglun"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "generators"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "glob": "^5.0.5",
+    "mkdirp": "^0.5.0",
+    "underscore.string": "^3.0.3",
+    "yeoman-generator": "~0.19.2"
+  },
+  "devDependencies": {
+    "mocha": "~2.1.0",
+    "rimraf": "^2.3.2"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  }
+}

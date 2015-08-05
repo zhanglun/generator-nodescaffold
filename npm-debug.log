@@ -1,0 +1,81 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'D:\\DEV\\nodejs\\\\node.exe',
+1 verbose cli   'D:\\DEV\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@2.11.2
+3 info using node@v0.12.5
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec { raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'D:\\test\\generatorTool\\generator-nodescaffold',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\admin\AppData\Roaming\npm-cache\generator-nodescaffold\0.0.0\package.tgz not in flight; packing
+9 verbose tar pack [ 'C:\\Users\\admin\\AppData\\Roaming\\npm-cache\\generator-nodescaffold\\0.0.0\\package.tgz',
+9 verbose tar pack   'D:\\test\\generatorTool\\generator-nodescaffold' ]
+10 verbose tarball C:\Users\admin\AppData\Roaming\npm-cache\generator-nodescaffold\0.0.0\package.tgz
+11 verbose folder D:\test\generatorTool\generator-nodescaffold
+12 info prepublish generator-nodescaffold@0.0.0
+13 verbose addLocalTarball adding from inside cache C:\Users\admin\AppData\Roaming\npm-cache\generator-nodescaffold\0.0.0\package.tgz
+14 silly cache afterAdd generator-nodescaffold@0.0.0
+15 verbose afterAdd C:\Users\admin\AppData\Roaming\npm-cache\generator-nodescaffold\0.0.0\package\package.json not in flight; writing
+16 verbose afterAdd C:\Users\admin\AppData\Roaming\npm-cache\generator-nodescaffold\0.0.0\package\package.json written
+17 silly publish { name: 'generator-nodescaffold',
+17 silly publish   version: '0.0.0',
+17 silly publish   description: 'Yeoman generator',
+17 silly publish   license: 'MIT',
+17 silly publish   main: 'app/index.js',
+17 silly publish   repository:
+17 silly publish    { type: 'git',
+17 silly publish      url: 'git+https://github.com/zhanglun/generator-nodescaffold.git' },
+17 silly publish   author:
+17 silly publish    { name: 'zhanglun',
+17 silly publish      email: 'zhanglun1410@gmail.com',
+17 silly publish      url: 'https://github.com/zhanglun' },
+17 silly publish   scripts: { test: 'mocha' },
+17 silly publish   files: [ 'generators' ],
+17 silly publish   keywords: [ 'yeoman-generator' ],
+17 silly publish   dependencies:
+17 silly publish    { glob: '^5.0.5',
+17 silly publish      mkdirp: '^0.5.0',
+17 silly publish      'underscore.string': '^3.0.3',
+17 silly publish      'yeoman-generator': '~0.19.2' },
+17 silly publish   devDependencies: { mocha: '~2.1.0', rimraf: '^2.3.2' },
+17 silly publish   engines: { node: '>=0.8.0' },
+17 silly publish   readme: '# generator-nodescaffold [![Build Status](https://secure.travis-ci.org/zhanglun/generator-nodescaffold.png?branch=master)](https://travis-ci.org/zhanglun/generator-nodescaffold)\n\n> [Yeoman](http://yeoman.io) generator\n\n\n## Getting Started\n\n### What is Yeoman?\n\nTrick question. It\'s not a thing. It\'s this guy:\n\n![](http://i.imgur.com/JHaAlBJ.png)\n\nBasically, he wears a top hat, lives in your computer, and waits for you to tell him what kind of application you wish to create.\n\nNot every new computer comes with a Yeoman pre-installed. He lives in the [npm](https://npmjs.org) package repository. You only have to ask for him once, then he packs up and moves into your hard drive. *Make sure you clean up, he likes new and shiny things.*\n\n```bash\nnpm install -g yo\n```\n\n### Yeoman Generators\n\nYeoman travels light. He didn\'t pack any generators when he moved in. You can think of a generator like a plug-in. You get to choose what type of application you wish to create, such as a Backbone application or even a Chrome extension.\n\nTo install generator-nodescaffold from npm, run:\n\n```bash\nnpm install -g generator-nodescaffold\n```\n\nFinally, initiate the generator:\n\n```bash\nyo nodescaffold\n```\n\n### Getting To Know Yeoman\n\nYeoman has a heart of gold. He\'s a person with feelings and opinions, but he\'s very easy to work with. If you think he\'s too opinionated, he can be easily convinced.\n\nIf you\'d like to get to know Yeoman better and meet some of his friends, [Grunt](http://gruntjs.com) and [Bower](http://bower.io), check out the complete [Getting Started Guide](https://github.com/yeoman/yeoman/wiki/Getting-Started).\n\n\n## License\n\nMIT\n',
+17 silly publish   readmeFilename: 'README.md',
+17 silly publish   bugs: { url: 'https://github.com/zhanglun/generator-nodescaffold/issues' },
+17 silly publish   homepage: 'https://github.com/zhanglun/generator-nodescaffold#readme',
+17 silly publish   _id: 'generator-nodescaffold@0.0.0',
+17 silly publish   _shasum: '9ef984f4a6840646c668037d512bf577dd9a26c1',
+17 silly publish   _from: '.' }
+18 verbose getPublishConfig undefined
+19 silly mapToRegistry name generator-nodescaffold
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npm.taobao.org/
+22 silly mapToRegistry uri https://registry.npm.taobao.org/generator-nodescaffold
+23 verbose publish registryBase https://registry.npm.taobao.org/
+24 silly publish uploading C:\Users\admin\AppData\Roaming\npm-cache\generator-nodescaffold\0.0.0\package.tgz
+25 verbose stack Error: auth required for publishing
+25 verbose stack     at CachingRegistryClient.publish (D:\DEV\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\publish.js:30:14)
+25 verbose stack     at D:\DEV\nodejs\node_modules\npm\lib\publish.js:134:14
+25 verbose stack     at mapToRegistry (D:\DEV\nodejs\node_modules\npm\lib\utils\map-to-registry.js:55:3)
+25 verbose stack     at publish_ (D:\DEV\nodejs\node_modules\npm\lib\publish.js:104:3)
+25 verbose stack     at Array.<anonymous> (D:\DEV\nodejs\node_modules\npm\node_modules\slide\lib\bind-actor.js:15:8)
+25 verbose stack     at LOOP (D:\DEV\nodejs\node_modules\npm\node_modules\slide\lib\chain.js:15:14)
+25 verbose stack     at LOOP (D:\DEV\nodejs\node_modules\npm\node_modules\slide\lib\chain.js:14:28)
+25 verbose stack     at chain (D:\DEV\nodejs\node_modules\npm\node_modules\slide\lib\chain.js:20:5)
+25 verbose stack     at D:\DEV\nodejs\node_modules\npm\lib\publish.js:73:5
+25 verbose stack     at RES (D:\DEV\nodejs\node_modules\npm\node_modules\inflight\inflight.js:23:14)
+26 verbose cwd D:\test\generatorTool\generator-nodescaffold
+27 error Windows_NT 6.3.9600
+28 error argv "D:\\DEV\\nodejs\\\\node.exe" "D:\\DEV\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+29 error node v0.12.5
+30 error npm  v2.11.2
+31 error code ENEEDAUTH
+32 error need auth auth required for publishing
+32 error need auth You need to authorize this machine using `npm adduser`
+33 verbose exit [ 1, true ]
