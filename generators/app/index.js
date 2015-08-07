@@ -73,7 +73,7 @@ module.exports = generators.Base.extend({
       this.prompt(prompt, function (responses) {
         console.log(responses);
         if(!responses.type.match){
-          done();
+          responses.type = 'MVC';
         }else{
           this.options.mvc = responses.type.match(/^MVC$/i) !== null;
           done();
