@@ -71,8 +71,13 @@ module.exports = generators.Base.extend({
       }];
 
       this.prompt(prompt, function (responses) {
-        this.options.mvc = responses.type.match(/^MVC$/i) !== null;
-        done();
+        console.log(responses);
+        if(!responses.type.match){
+          done();
+        }else{
+          this.options.mvc = responses.type.match(/^MVC$/i) !== null;
+          done();
+        }
       }.bind(this));
     },
     viewEngine: function () {
