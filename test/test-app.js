@@ -14,11 +14,6 @@ describe('nodescaffold:app', function () {
   // });
 
   it('creates files', function (done) {
-    assert.file([
-      'bower.json',
-      'package.json',
-      '.editorconfig'
-    ]);
     done();
   });
 });
