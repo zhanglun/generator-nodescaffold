@@ -1,6 +1,8 @@
 'use strict';
 
 var request = require('request');
+var build = 'build';
+var src = 'src';
 
 module.exports = function (grunt) {
   // show elapsed time at the end
@@ -20,28 +22,28 @@ module.exports = function (grunt) {
     sass: {
       dist: {
         files: {
-          'public/css/style.css': 'public/css/style.scss'
+          build + '/css/style.css': src + '/css/style.scss'
         }
       }
     },<% } %><% if(options.cssPreprocessor == 'node-sass'){ %>
     sass: {
       dist: {
         files: {
-          'public/css/style.css': 'public/css/style.scss'
+          build + '/css/style.css': src + '/css/style.scss'
         }
       }
     },<% } %><% if(options.cssPreprocessor == 'less'){ %>
     less: {
       dist: {
         files: {
-          'public/css/style.css': 'public/css/style.less'
+          build + '/css/style.css': src + '/css/style.less'
         }
       }
     },<% } %><% if(options.cssPreprocessor == 'stylus'){ %>
     stylus: {
       dist: {
         files: {
-          'public/css/style.css': 'public/css/style.styl'
+          build + '/css/style.css': src + '/css/style.styl'
         }
       }
     },<% } %>
@@ -60,11 +62,11 @@ module.exports = function (grunt) {
       },
       css: {
         files: [<% if(options.cssPreprocessor == 'none'){ %>
-          'public/css/*.css'<% } %><% if(options.cssPreprocessor == 'sass'){ %>
-          'public/css/*.scss'<% } %><% if(options.cssPreprocessor == 'node-sass'){ %>
-          'public/css/*.scss'<% } %><% if(options.cssPreprocessor == 'less'){ %>
-          'public/css/*.less'<% } %><% if(options.cssPreprocessor == 'stylus'){ %>
-          'public/css/*.styl'<% } %>
+          'src/css/*.css'<% } %><% if(options.cssPreprocessor == 'sass'){ %>
+          'src/css/*.scss'<% } %><% if(options.cssPreprocessor == 'node-sass'){ %>
+          'src/css/*.scss'<% } %><% if(options.cssPreprocessor == 'less'){ %>
+          'src/css/*.less'<% } %><% if(options.cssPreprocessor == 'stylus'){ %>
+          'src/css/*.styl'<% } %>
         ],<% if(options.cssPreprocessor == 'sass'){ %>
         tasks: ['sass'],<% } %><% if(options.cssPreprocessor == 'node-sass'){ %>
         tasks: ['sass'],<% } %><% if(options.cssPreprocessor == 'less'){ %>

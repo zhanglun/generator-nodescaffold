@@ -8,38 +8,38 @@ var gulp = require('gulp'),
   stylus = require('gulp-stylus')<% } %>;
 <% if(options.cssPreprocessor == 'sass'){ %>
 gulp.task('sass', function () {
-  return sass('./public/css/')
-    .pipe(gulp.dest('./public/css'))
+  return sass('./src/css/')
+    .pipe(gulp.dest('./build/css'))
     .pipe(livereload());
 });
 
 gulp.task('watch', function() {
-  gulp.watch('./public/css/*.scss', ['sass']);
+  gulp.watch('./src/css/*.scss', ['sass']);
 });<% } %><% if(options.cssPreprocessor == 'node-sass'){ %>
 gulp.task('sass', function () {
-  gulp.src('./public/css/*.scss')
+  gulp.src('./src/css/*.scss')
     .pipe(plumber())
     .pipe(sass())
-    .pipe(gulp.dest('./public/css'))
+    .pipe(gulp.dest('./build/css'))
     .pipe(livereload());
 });
 
 gulp.task('watch', function() {
-  gulp.watch('./public/css/*.scss', ['sass']);
+  gulp.watch('./src/css/*.scss', ['sass']);
 });<% } %><% if(options.cssPreprocessor == 'less'){ %>
 gulp.task('less', function () {
-  gulp.src('./public/css/*.less')
+  gulp.src('./src/css/*.less')
     .pipe(plumber())
     .pipe(less())
-    .pipe(gulp.dest('./public/css'))
+    .pipe(gulp.dest('./build/css'))
     .pipe(livereload());
 });
 
 gulp.task('watch', function() {
-  gulp.watch('./public/css/*.less', ['less']);
+  gulp.watch('./src/css/*.less', ['less']);
 });<% } %><% if(options.cssPreprocessor == 'stylus'){ %>
 gulp.task('stylus', function () {
-  gulp.src('./public/css/*.styl')
+  gulp.src('./src/css/*.styl')
     .pipe(plumber())
     .pipe(stylus())
     .pipe(gulp.dest('./public/css'))
@@ -47,7 +47,7 @@ gulp.task('stylus', function () {
 });
 
 gulp.task('watch', function() {
-  gulp.watch('./public/css/*.styl', ['stylus']);
+  gulp.watch('./src/css/*.styl', ['stylus']);
 });<% } %>
 
 gulp.task('develop', function () {
