@@ -1,4 +1,9 @@
-# generator-nodescaffold [![Build Status](https://secure.travis-ci.org/zhanglun/generator-nodescaffold.png?branch=master)](https://travis-ci.org/zhanglun/generator-nodescaffold)
+# generator-nodescaffold 
+
+[![Build Status](https://secure.travis-ci.org/zhanglun/generator-nodescaffold.png?branch=master)](https://travis-ci.org/zhanglun/generator-nodescaffold)[![npm version](https://badge.fury.io/js/generator-nodescaffold.svg)](http://badge.fury.io/js/generator-nodescaffold)
+
+
+[![NPM](https://nodei.co/npm/generator-nodescaffold.png)](https://npmjs.org/package/generator-nodescaffold)
 
 > [Yeoman](http://yeoman.io) generator
 
